@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.059" tests="10" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/test-classes:/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/classes:/Users/mac/.m2/repository/org/springframework/security/spring-security-core/6.2.0/spring-security-core-6.2.0.jar:/Users/mac/.m2/repository/org/springframework/security/spring-security-crypto/6.2.0/spring-security-crypto-6.2.0.jar:/Users/mac/.m2/repository/org/springframework/spring-aop/6.1.0/spring-aop-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-beans/6.1.0/spring-beans-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-context/6.1.0/spring-context-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-core/6.1.0/spring-core-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-jcl/6.1.0/spring-jcl-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-expression/6.1.0/spring-expression-6.1.0.jar:/Users/mac/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/mac/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/mac/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/mac/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/mac/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-api/1.12.2/junit-platform-suite-api-1.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.12.2/junit-platform-suite-engine-1.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.12.2/junit-platform-suite-commons-1.12.2.jar:/Users/mac/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/mac/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:/Users/mac/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-launcher/1.12.2/junit-platform-launcher-1.12.2.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Users/mac/Library/Java/JavaVirtualMachines/corretto-23.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/surefire/surefirebooter-20260406180122736_3.jar /Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/surefire 2026-04-06T18-01-22_699-jvmRun1 surefire-20260406180122736_1tmp surefire_0-20260406180122736_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/test-classes:/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/classes:/Users/mac/.m2/repository/org/springframework/security/spring-security-core/6.2.0/spring-security-core-6.2.0.jar:/Users/mac/.m2/repository/org/springframework/security/spring-security-crypto/6.2.0/spring-security-crypto-6.2.0.jar:/Users/mac/.m2/repository/org/springframework/spring-aop/6.1.0/spring-aop-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-beans/6.1.0/spring-beans-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-context/6.1.0/spring-context-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-core/6.1.0/spring-core-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-jcl/6.1.0/spring-jcl-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-expression/6.1.0/spring-expression-6.1.0.jar:/Users/mac/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/mac/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/mac/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/mac/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/mac/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-api/1.12.2/junit-platform-suite-api-1.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.12.2/junit-platform-suite-engine-1.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.12.2/junit-platform-suite-commons-1.12.2.jar:/Users/mac/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/mac/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:/Users/mac/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-launcher/1.12.2/junit-platform-launcher-1.12.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mac"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/Users/mac/Library/Java/JavaVirtualMachines/corretto-23.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/surefire/surefirebooter-20260406180122736_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2+7-FR"/>
+    <property name="user.name" value="mac"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-23.0.2.7.1"/>
+    <property name="localRepository" value="/Users/mac/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-23/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/ms/rb6pwhn103753bg1s1zmkgp00000gn/T/"/>
+    <property name="idea.version" value="2024.1"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="23.0.2+7-FR"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="EQ-02: explicit transitive edges should be redundant" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.003">
+    <system-out><![CDATA[>>> MR recorded: EQ-02 PASS (2ms)
+timestamp = 2026-04-06T18:01:23.326514, EquivalenceBasedMRs:EQ-02: explicit transitive edges should be redundant = 
+                              |-----------------------jqwik-----------------------
+tries = 4                     | # of calls to property
+checks = 4                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -4177109982042137725   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="EQ-02: explicit transitive edges should be redundant" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.002">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.727245, EquivalenceBasedMRs:EQ-02: explicit transitive edges should be redundant = 
+                              |-----------------------jqwik-----------------------
+tries = 4                     | # of calls to property
+checks = 4                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 509596023119798221     | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="permissionSetCommutativity" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.006">
+    <system-out><![CDATA[>>> MR recorded: EQ-08 PASS (5ms)
+timestamp = 2026-04-06T18:01:23.332415, EquivalenceBasedMRs:EQ-08: order of permission assignment should not matter = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -636092230500982922    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-08: order of permission assignment should not matter] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="permissionSetCommutativity" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.006">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.733212, EquivalenceBasedMRs:EQ-08: order of permission assignment should not matter = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 5017912486456403078    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-08: order of permission assignment should not matter] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="hierarchyIsomorphism" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.005">
+    <system-out><![CDATA[>>> MR recorded: EQ-07 PASS (4ms)
+timestamp = 2026-04-06T18:01:23.337145, EquivalenceBasedMRs:EQ-07: isomorphic hierarchies should produce equivalent access decisions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 2464514064989663139    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-07: isomorphic hierarchies should produce equivalent access decisions] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="hierarchyIsomorphism" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.005">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.738800, EquivalenceBasedMRs:EQ-07: isomorphic hierarchies should produce equivalent access decisions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 8543730066816261341    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-07: isomorphic hierarchies should produce equivalent access decisions] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="edgePermutationInvariance" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.009">
+    <system-out><![CDATA[>>> MR recorded: EQ-05 PASS (8ms)
+timestamp = 2026-04-06T18:01:23.346512, EquivalenceBasedMRs:EQ-05: Edge permutations should produce equivalent hierarchies = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -377380389897682644    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-05: Edge permutations should produce equivalent hierarchies] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="edgePermutationInvariance" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.011">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.750689, EquivalenceBasedMRs:EQ-05: Edge permutations should produce equivalent hierarchies = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 8526271224068176629    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-05: Edge permutations should produce equivalent hierarchies] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="declarationOrderIndependence" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.004">
+    <system-out><![CDATA[>>> MR recorded: EQ-01 PASS (3ms)
+timestamp = 2026-04-06T18:01:23.350716, EquivalenceBasedMRs:EQ-01: role hierarchy should be independent of declaration order = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -3124911325001370815   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-01: role hierarchy should be independent of declaration order] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="declarationOrderIndependence" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.006">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.756927, EquivalenceBasedMRs:EQ-01: role hierarchy should be independent of declaration order = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -1865154540520929297   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-01: role hierarchy should be independent of declaration order] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="representationFormatEquivalence" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.007">
+    <failure message="[Role ROLE_A permissions should be independent of string formatting] &#10;expected: [&quot;ROLE_A&quot;]&#10; but was: [&quot;ROLE_C&quot;, &quot;ROLE_A&quot;, &quot;ROLE_B&quot;]" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+[Role ROLE_A permissions should be independent of string formatting] 
+expected: ["ROLE_A"]
+ but was: ["ROLE_C", "ROLE_A", "ROLE_B"]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at com.research.rbac_testing.metamorphic.EquivalenceBasedMRs.representationFormatEquivalence(EquivalenceBasedMRs.java:250)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:28)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:17)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+]]></failure>
+    <system-out><![CDATA[>>> MR recorded: EQ-04 FAIL (4ms)
+timestamp = 2026-04-06T18:01:23.356026, EquivalenceBasedMRs:EQ-04: Different string formats of same hierarchy should be equivalent = 
+  org.opentest4j.AssertionFailedError:
+    [Role ROLE_A permissions should be independent of string formatting] 
+    expected: ["ROLE_A"]
+     but was: ["ROLE_C", "ROLE_A", "ROLE_B"]
+
+                              |-----------------------jqwik-----------------------
+tries = 1                     | # of calls to property
+checks = 1                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 7719075996806191251    | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="representationFormatEquivalence" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.003">
+    <failure message="[Role ROLE_A permissions should be independent of string formatting] &#10;expected: [&quot;ROLE_A&quot;]&#10; but was: [&quot;ROLE_C&quot;, &quot;ROLE_A&quot;, &quot;ROLE_B&quot;]" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+[Role ROLE_A permissions should be independent of string formatting] 
+expected: ["ROLE_A"]
+ but was: ["ROLE_C", "ROLE_A", "ROLE_B"]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at com.research.rbac_testing.metamorphic.EquivalenceBasedMRs.representationFormatEquivalence(EquivalenceBasedMRs.java:250)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:28)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:17)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+]]></failure>
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.759473, EquivalenceBasedMRs:EQ-04: Different string formats of same hierarchy should be equivalent = 
+  org.opentest4j.AssertionFailedError:
+    [Role ROLE_A permissions should be independent of string formatting] 
+    expected: ["ROLE_A"]
+     but was: ["ROLE_C", "ROLE_A", "ROLE_B"]
+
+                              |-----------------------jqwik-----------------------
+tries = 1                     | # of calls to property
+checks = 1                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -2132263390325344148   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="nameInvarianceProperty" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.012">
+    <system-out><![CDATA[>>> MR recorded: EQ-03 PASS (10ms)
+timestamp = 2026-04-06T18:01:23.371139, EquivalenceBasedMRs:EQ-03: Hierarchy structure should be invariant to role naming = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 396303766103500287     | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-03: Hierarchy structure should be invariant to role naming] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="nameInvarianceProperty" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.008">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.769016, EquivalenceBasedMRs:EQ-03: Hierarchy structure should be invariant to role naming = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -3495118803389194962   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-03: Hierarchy structure should be invariant to role naming] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="alternativePathEquivalence" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.005">
+    <system-out><![CDATA[>>> MR recorded: EQ-09 PASS (4ms)
+timestamp = 2026-04-06T18:01:23.376144, EquivalenceBasedMRs:EQ-9: different inheritance path to same permission should be equivalent = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -1975401076370753237   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-9: different inheritance path to same permission should be equivalent] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="alternativePathEquivalence" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.008">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.777212, EquivalenceBasedMRs:EQ-9: different inheritance path to same permission should be equivalent = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -3648456528511726786   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-9: different inheritance path to same permission should be equivalent] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="roleRenamingInvariance" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.006">
+    <system-out><![CDATA[>>> MR recorded: EQ-06 PASS (5ms)
+timestamp = 2026-04-06T18:01:23.382439, EquivalenceBasedMRs:EQ-06: renaming roles shouldn't change the access control decisions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -9022000072827348385   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-06: renaming roles shouldn't change the access control decisions] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="roleRenamingInvariance" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.005">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.782115, EquivalenceBasedMRs:EQ-06: renaming roles shouldn't change the access control decisions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -5576066678340987624   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [EquivalenceBasedMRs:EQ-06: renaming roles shouldn't change the access control decisions] in container [com.research.rbac_testing.metamorphic.EquivalenceBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="EQ-10: Deep hierarchy should equal its flattened equivalent" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.003">
+    <system-out><![CDATA[>>> MR recorded: EQ-10 PASS (2ms)
+timestamp = 2026-04-06T18:01:23.385531, EquivalenceBasedMRs:EQ-10: Deep hierarchy should equal its flattened equivalent = 
+                              |-----------------------jqwik-----------------------
+tries = 3                     | # of calls to property
+checks = 3                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 4961070235575261263    | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="EQ-10: Deep hierarchy should equal its flattened equivalent" classname="com.research.rbac_testing.metamorphic.EquivalenceBasedMRs" time="0.002">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.784425, EquivalenceBasedMRs:EQ-10: Deep hierarchy should equal its flattened equivalent = 
+                              |-----------------------jqwik-----------------------
+tries = 3                     | # of calls to property
+checks = 3                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 2744626566585201876    | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+</testsuite>

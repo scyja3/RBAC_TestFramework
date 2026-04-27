@@ -1,0 +1,4 @@
+com/research/rbac_testing/helpers/SpringSecurityTestHelpers.class
+com/research/rbac_testing/annotations/BugType.class
+com/research/rbac_testing/annotations/BugType$BugTypeEnum.class
+com/research/rbac_testing/annotations/BugType$MRCategory.class

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.048" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/test-classes:/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/classes:/Users/mac/.m2/repository/org/springframework/security/spring-security-core/6.2.0/spring-security-core-6.2.0.jar:/Users/mac/.m2/repository/org/springframework/security/spring-security-crypto/6.2.0/spring-security-crypto-6.2.0.jar:/Users/mac/.m2/repository/org/springframework/spring-aop/6.1.0/spring-aop-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-beans/6.1.0/spring-beans-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-context/6.1.0/spring-context-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-core/6.1.0/spring-core-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-jcl/6.1.0/spring-jcl-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-expression/6.1.0/spring-expression-6.1.0.jar:/Users/mac/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/mac/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/mac/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/mac/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/mac/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-api/1.12.2/junit-platform-suite-api-1.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.12.2/junit-platform-suite-engine-1.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.12.2/junit-platform-suite-commons-1.12.2.jar:/Users/mac/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/mac/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:/Users/mac/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-launcher/1.12.2/junit-platform-launcher-1.12.2.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Users/mac/Library/Java/JavaVirtualMachines/corretto-23.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/surefire/surefirebooter-20260406180122736_3.jar /Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/surefire 2026-04-06T18-01-22_699-jvmRun1 surefire-20260406180122736_1tmp surefire_0-20260406180122736_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/test-classes:/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/classes:/Users/mac/.m2/repository/org/springframework/security/spring-security-core/6.2.0/spring-security-core-6.2.0.jar:/Users/mac/.m2/repository/org/springframework/security/spring-security-crypto/6.2.0/spring-security-crypto-6.2.0.jar:/Users/mac/.m2/repository/org/springframework/spring-aop/6.1.0/spring-aop-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-beans/6.1.0/spring-beans-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-context/6.1.0/spring-context-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-core/6.1.0/spring-core-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-jcl/6.1.0/spring-jcl-6.1.0.jar:/Users/mac/.m2/repository/org/springframework/spring-expression/6.1.0/spring-expression-6.1.0.jar:/Users/mac/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/mac/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/mac/.m2/repository/net/jqwik/jqwik/1.8.4/jqwik-1.8.4.jar:/Users/mac/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-api/1.8.4/jqwik-api-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-web/1.8.4/jqwik-web-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-time/1.8.4/jqwik-time-1.8.4.jar:/Users/mac/.m2/repository/net/jqwik/jqwik-engine/1.8.4/jqwik-engine-1.8.4.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/mac/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-api/1.12.2/junit-platform-suite-api-1.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.12.2/junit-platform-suite-engine-1.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.12.2/junit-platform-suite-commons-1.12.2.jar:/Users/mac/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/mac/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/mac/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:/Users/mac/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-launcher/1.12.2/junit-platform-launcher-1.12.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mac"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/Users/mac/Library/Java/JavaVirtualMachines/corretto-23.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing/target/surefire/surefirebooter-20260406180122736_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2+7-FR"/>
+    <property name="user.name" value="mac"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-23.0.2.7.1"/>
+    <property name="localRepository" value="/Users/mac/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-23/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/ms/rb6pwhn103753bg1s1zmkgp00000gn/T/"/>
+    <property name="idea.version" value="2024.1"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/mac/Desktop/UGT Files/year 4/COMP3050 FYP/rbac-testing"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="23.0.2+7-FR"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="MON-01: Parent roles must have &gt;= permissions of child roles" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.003">
+    <system-out><![CDATA[>>> MR recorded: MON-01 PASS (1ms)
+timestamp = 2026-04-06T18:01:23.389251, MonotonicityBasedMRs:MON-01: Parent roles must have >= permissions of child roles = 
+                              |-----------------------jqwik-----------------------
+tries = 5                     | # of calls to property
+checks = 5                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -3643153703396672045   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="MON-01: Parent roles must have &gt;= permissions of child roles" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.004">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.681689, MonotonicityBasedMRs:MON-01: Parent roles must have >= permissions of child roles = 
+                              |-----------------------jqwik-----------------------
+tries = 5                     | # of calls to property
+checks = 5                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -8246707063809082364   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="cumulativePermissionAddition" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.009">
+    <system-out><![CDATA[>>> MR recorded: MON-10 PASS (8ms)
+timestamp = 2026-04-06T18:01:23.398543, MonotonicityBasedMRs:MON-10: Sequential vs batch permission addition should yield same result = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 7983667841411175490    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-10: Sequential vs batch permission addition should yield same result] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="cumulativePermissionAddition" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.006">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.688841, MonotonicityBasedMRs:MON-10: Sequential vs batch permission addition should yield same result = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -8195202270494517779   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-10: Sequential vs batch permission addition should yield same result] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="MON-08: Adding hierarchy depth should monotonically increase top-level permissions" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.013">
+    <system-out><![CDATA[>>> MR recorded: MON-08 PASS (10ms)
+timestamp = 2026-04-06T18:01:23.410606, MonotonicityBasedMRs:MON-08: Adding hierarchy depth should monotonically increase top-level permissions = 
+                              |-----------------------jqwik-----------------------
+tries = 9                     | # of calls to property
+checks = 9                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -6090875687295238488   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="MON-08: Adding hierarchy depth should monotonically increase top-level permissions" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.003">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.692072, MonotonicityBasedMRs:MON-08: Adding hierarchy depth should monotonically increase top-level permissions = 
+                              |-----------------------jqwik-----------------------
+tries = 9                     | # of calls to property
+checks = 9                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 2224317385903512173    | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="strengtheningHierarchyIncreasesReachability" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.007">
+    <system-out><![CDATA[>>> MR recorded: MON-03 PASS (6ms)
+timestamp = 2026-04-06T18:01:23.419195, MonotonicityBasedMRs:MON-03: Strengthening hierarchy increases reachability monotonically = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 4373331539439660723    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-03: Strengthening hierarchy increases reachability monotonically] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="strengtheningHierarchyIncreasesReachability" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.006">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.698011, MonotonicityBasedMRs:MON-03: Strengthening hierarchy increases reachability monotonically = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 8066602574348638221    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-03: Strengthening hierarchy increases reachability monotonically] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="roleRemovalNeverIncreasesPermissions" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.005">
+    <system-out><![CDATA[>>> MR recorded: MON-06 PASS (3ms)
+timestamp = 2026-04-06T18:01:23.423932, MonotonicityBasedMRs:MON-06: removing a role should never increase any role's permissions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 8293840122658478046    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-06: removing a role should never increase any role's permissions] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="roleRemovalNeverIncreasesPermissions" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.005">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.703148, MonotonicityBasedMRs:MON-06: removing a role should never increase any role's permissions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -7416871234532001363   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-06: removing a role should never increase any role's permissions] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="userAssignmentMonotonicity" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.004">
+    <system-out><![CDATA[>>> MR recorded: MON-09 PASS (3ms)
+timestamp = 2026-04-06T18:01:23.427967, MonotonicityBasedMRs:MON-09: Assigning user to additional roles should never decrease permissions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 74411017342204375      | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-09: Assigning user to additional roles should never decrease permissions] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="userAssignmentMonotonicity" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.004">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.707700, MonotonicityBasedMRs:MON-09: Assigning user to additional roles should never decrease permissions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -3835990595550893080   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-09: Assigning user to additional roles should never decrease permissions] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="weakeningHierarchyReducesReachability" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.004">
+    <system-out><![CDATA[>>> MR recorded: MON-04 PASS (3ms)
+timestamp = 2026-04-06T18:01:23.432239, MonotonicityBasedMRs:MON-04: Removing edges should monotonically reduce reachability = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 4291566589839623642    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-04: Removing edges should monotonically reduce reachability] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="weakeningHierarchyReducesReachability" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.003">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.711654, MonotonicityBasedMRs:MON-04: Removing edges should monotonically reduce reachability = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 4428172067062679061    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-04: Removing edges should monotonically reduce reachability] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="MON-05: Reachability sets must maintain subset relationship across levels" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.002">
+    <system-out><![CDATA[>>> MR recorded: MON-05 PASS (1ms)
+timestamp = 2026-04-06T18:01:23.434603, MonotonicityBasedMRs:MON-05: Reachability sets must maintain subset relationship across levels = 
+                              |-----------------------jqwik-----------------------
+tries = 4                     | # of calls to property
+checks = 4                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 5367872902621147600    | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="MON-05: Reachability sets must maintain subset relationship across levels" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.002">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.713723, MonotonicityBasedMRs:MON-05: Reachability sets must maintain subset relationship across levels = 
+                              |-----------------------jqwik-----------------------
+tries = 4                     | # of calls to property
+checks = 4                    | # of not rejected calls
+generation = EXHAUSTIVE       | parameters are exhaustively generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 8970880308853008312    | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="addingEdgesNeverReducesPermissions" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.006">
+    <system-out><![CDATA[>>> MR recorded: MON-02 PASS (5ms)
+timestamp = 2026-04-06T18:01:23.440487, MonotonicityBasedMRs:MON-02: Adding inheritance edges should not reduce any role's permissions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -4514902460763084772   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-02: Adding inheritance edges should not reduce any role's permissions] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="addingEdgesNeverReducesPermissions" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.006">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.720436, MonotonicityBasedMRs:MON-02: Adding inheritance edges should not reduce any role's permissions = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = 6062413837003031654    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-02: Adding inheritance edges should not reduce any role's permissions] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="permissionRevocationMonotonicity" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.006">
+    <system-out><![CDATA[>>> MR recorded: MON-07 PASS (5ms)
+timestamp = 2026-04-06T18:01:23.446654, MonotonicityBasedMRs:MON-07: revoking permission should only decrease system-wide access = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -482104081573782467    | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-07: revoking permission should only decrease system-wide access] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+  <testcase name="permissionRevocationMonotonicity" classname="com.research.rbac_testing.metamorphic.MonotonicityBasedMRs" time="0.005">
+    <system-out><![CDATA[timestamp = 2026-04-06T18:01:23.725089, MonotonicityBasedMRs:MON-07: revoking permission should only decrease system-wide access = 
+                              |-----------------------jqwik-----------------------
+tries = 150                   | # of calls to property
+checks = 150                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 0          | # of all combined edge cases
+edge-cases#tried = 0          | # of edge cases tried in current run
+seed = -5377115081555360400   | random seed to reproduce generated values
+
+
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 6:01:23 PM net.jqwik.engine.execution.CheckedProperty maybeWarnOnMultipleTriesWithoutForallParameters
+WARNING: Running Property [MonotonicityBasedMRs:MON-07: revoking permission should only decrease system-wide access] in container [com.research.rbac_testing.metamorphic.MonotonicityBasedMRs] without any @ForAll parameters for 150 tries.
+    Maybe you want to change it into an @Example?
+]]></system-err>
+  </testcase>
+</testsuite>

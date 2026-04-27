@@ -1,0 +1,15 @@
+com/research/rbac_testing/reports/TestReport.class
+com/research/rbac_testing/complexity/ComplexityScalingTest$HierarchyBuilder.class
+com/research/rbac_testing/RBACMetamorphicTestSuite.class
+com/research/rbac_testing/reports/ReportListener.class
+com/research/rbac_testing/metamorphic/InheritanceBasedMRs.class
+com/research/rbac_testing/bugs/KnownBugReproductionTests.class
+com/research/rbac_testing/reports/MRMetrics.class
+com/research/rbac_testing/bugs/ConcurrentModificationTests.class
+com/research/rbac_testing/complexity/ComplexityScalingTest.class
+com/research/rbac_testing/patched/RoleHierarchyImplPatched.class
+com/research/rbac_testing/metamorphic/MonotonicityBasedMRs.class
+com/research/rbac_testing/bugs/ConcurrentModificationTestsPatched.class
+com/research/rbac_testing/reports/TestResult.class
+com/research/rbac_testing/metamorphic/EquivalenceBasedMRs.class
+com/research/rbac_testing/reports/JqwikResultsWriter.class
