@@ -29,19 +29,21 @@ The difference between MRs and HMRs is that any fault raised in an MR is a defin
 src/
 └── test/java/com/research/rbac_testing/
     ├── metamorphic/
-    │   ├── InheritanceBasedMRs.java      ← INH-01 through INH-10
-    │   ├── MonotonicityBasedMRs.java     ← MON-01 through MON-10
-    │   └── EquivalenceBasedMRs.java      ← EQ-01 through EQ-10
+    │   ├── InheritanceBasedMRs.java            ← INH-01 through INH-10
+    │   ├── MonotonicityBasedMRs.java           ← MON-01 through MON-10
+    │   └── EquivalenceBasedMRs.java            ← EQ-01 through EQ-10
+    ├── bugs/
+    │   └── ConcurrentModificationTests.java    ← CONC-01 through CONC-05
     ├── helpers/
-    │   └── SpringSecurityTestHelpers.java ← shared utilities
+    │   └── SpringSecurityTestHelpers.java      ← shared utilities
     ├── annotations/
-    │   └── BugType.java                  ← @BugType annotation
+    │   └── BugType.java                        ← @BugType annotation
     ├── reports/
-    │   ├── JqwikResultsWriter.java       ← writes CSV output
-    │   ├── MRMetrics.java                ← timing + pass/fail
-    │   ├── TestReport.java               ← summary
-    │   └── TestResult.java               ← per-MR record
-    └── RBACMetamorphicTestSuite.java     ← entry point for the full suite
+    │   ├── JqwikResultsWriter.java             ← writes CSV output
+    │   ├── MRMetrics.java                      ← timing + pass/fail
+    │   ├── TestReport.java                     ← summary
+    │   └── TestResult.java                     ← per-MR record
+    └── RBACMetamorphicTestSuite.java           ← entry point for the full suite
 ```
 
 ---
@@ -84,11 +86,11 @@ The data is read during runtime by the reporting pipeline.
 
 The three output files are:
 
-| File | Contents |
-|------|----------|
-| `jqwik_results_*.csv` | Raw jqwik property-level results |
+| File | Contents                                             |
+|------|------------------------------------------------------|
+| `jqwik_results_*.csv` | Raw jqwik property-level results                     |
 | `raw_results_*.csv` | Per-MR execution data (timing, pass/fail, bug types) |
-| `summary_*.csv` | Aggregated results across all 39 MRs |
+| `summary_*.csv` | Aggregated results across all 35 MRs                 |
 
 
 ## Known Bugs Found
