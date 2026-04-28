@@ -94,7 +94,6 @@ The three output files are:
 ## Known Bugs Found
 
 So far, the framework has detected two MRs that failed on the current version of Spring Security:
-- **INH-02 (antisymmetry check):** the RoleHierarchyImpl does not correctly reject cyclic hierarchies in all cases
 - **EQ-04 (consistency check):** the equivalent hierarchy produce different reachability results under certain conditions.
 
 If you have noticed, there is a separate bug folder within the project and underneath the folder,
