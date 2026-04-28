@@ -68,8 +68,8 @@ This category checks how **describing** a role hierarchy doesn't change what it 
 ## What is the difference between MR and HMR?
 Not all of the 30 MRs have the same relationship. This classification follows Ying et al.'s framework:
 
-- **MRs (Metamorphic Relations)** — 21 of the 30 — encode properties that must *always* hold.
-- **HMRs (Hypothetical MRs)** — 9 of the 30 — encode properties that are *reasonable to expect* but not formally guaranteed. A violation might be a bug, or it might be an intentional design decision that the documentation doesn't clearly cover.
+- **MRs (Metamorphic Relations)** — 20 of the 30 — encode properties that must *always* hold.
+- **HMRs (Hypothetical MRs)** — 10 of the 30 — encode properties that are *reasonable to expect* but not formally guaranteed. A violation might be a bug, or it might be an intentional design decision that the documentation doesn't clearly cover.
 
 This tutorial will explain this in more detail, since when interpreting the results, it will matter a lot. 
 
