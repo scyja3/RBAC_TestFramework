@@ -94,10 +94,11 @@ mvn test -Dtest="InheritanceBasedMRs#transitiveClosureInChain"
 
 This is useful when you are investigating a specific failure or writing a new MR.
 
-Reproducing a known failure is also possible. There are two MRs that failed deterministically (INH-02 and EQ-04). You can reproduce them by running:
+Reproducing a known failure is also possible.
+There is one MR that failed deterministically (EQ-04).
+You can reproduce them by running:
 
 ```bash 
-mvn test -Dtest="InheritanceBasedMRs#antisymmetryPreventsSimpleCycles"
 mvn test -Dtest="EquivalenceBasedMRs#representationFormatEquivalence"
 ```
 The output will confirm the failure and show you the exact input that triggered it.
